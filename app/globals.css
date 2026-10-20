@@ -1,0 +1,42 @@
+:root {
+  --cream: #fbf0da;
+  --sand: #f3c98d;
+  --clay: #8a4a22;
+  --ink: #3b2316;
+  --dusk: #2b1a10;
+  color-scheme: light;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  height: 100%;
+  /* the deck is the only scroller, and it only scrolls sideways */
+  overflow: hidden;
+  overscroll-behavior: none;
+}
+
+body {
+  background: var(--dusk);
+  color: var(--ink);
+  font-family: var(--font-geist-sans), system-ui, -apple-system, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-tap-highlight-color: transparent;
+  /* sideways panning only — pinch to zoom stays available for the fine print */
+  touch-action: pan-x pinch-zoom;
+}
+
+img {
+  display: block;
+}
+
+button {
+  font: inherit;
+  color: inherit;
+}
